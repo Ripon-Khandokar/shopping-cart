@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellow world</title>
+</head>
+<body>
+    <h2 id="hellow">hellow duniya</h2>
+    <h1 id="world" style="display:none;" >hellow world</h1>
+
+    <button id="btn">click me</button>
+    <input type="text" placeholder="value type here" value="5">
+
+
+
+
+<script>
+    document.getElementById("hellow").addEventListener('click', function(){
+        const world = document.getElementById("world");
+        world.style.display = "block";
+    })
+
+
+    var number = 5.5;
+   var result = parseFloat(number);
+    console.log(result);
+    var result2 = Math.round(result);
+    console.log(result2);
+document.getElementById("world").addEventListener("click", function(){
+    this.style.display = "none";
+})
+    document.getElementById("btn").addEventListener("click", function(){
+        const duniya = document.getElementById("hellow");
+        duniya.style.display = "none";
+        this.style.display = "none";
+    })
+
+</script>
+</body>
+</html>
